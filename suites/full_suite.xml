@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="full_suite" parallel="tests" thread-count="1">
+
+	<!-- Listener to Generate HTML Report -->
+	<listeners>
+		<listener class-name="com.template.library.ReportListener"></listener>
+	</listeners>
+	<!-- Name of the report -->
+	<parameter name="reportName" value="full_suite_xml" />
+	<parameter name="screenShot" value="default" />
+
+	<!-- Global Params -->
+	<!-- <parameter name="device" value="android" /> -->
+
+
+	<test verbose="2" name="TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features">
+		<classes>
+		   <class  name = "com.template.template.TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features"/>
+	    </classes>
+    </test>
+    
+    <test verbose="2" name="TC02_ItemsList_Validate_Movies_list_view">
+		<classes>
+		   <class  name = "com.template.template.TC02_ItemsList_Validate_Movies_list_view"/>
+	    </classes>
+    </test>
+    
+    
+
+</suite>

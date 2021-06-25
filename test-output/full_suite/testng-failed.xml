@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [full_suite]" parallel="tests">
+  <parameter name="reportName" value="full_suite_xml"/>
+  <parameter name="screenShot" value="default"/>
+  <listeners>
+    <listener class-name="com.template.library.ReportListener"/>
+  </listeners>
+  <test thread-count="1" name="TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features(failed)" parallel="tests">
+    <classes>
+      <class name="com.template.template.TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features">
+        <methods>
+          <include name="selectCitiesFromTheList"/>
+          <include name="selectContinentsFromTheList"/>
+          <include name="launchUrl"/>
+          <include name="tearDown"/>
+          <include name="selectCountriesFromTheList"/>
+          <include name="validateFeatureItemList"/>
+        </methods>
+      </class> <!-- com.template.template.TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features -->
+    </classes>
+  </test> <!-- TC01_ItemsList_Validate_the_ability_to_use_items_list_filter_features(failed) -->
+</suite> <!-- Failed suite [full_suite] -->
